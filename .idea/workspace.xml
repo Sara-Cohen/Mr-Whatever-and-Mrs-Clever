@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3d76689d-b296-4e4b-95b8-3f21c797bbb6" name="Changes" comment="init commit">
-      <change afterPath="$PROJECT_DIR$/src/PlayerFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RendererFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tournament.java" afterDir="false" />
+    <list default="true" id="3d76689d-b296-4e4b-95b8-3f21c797bbb6" name="Changes" comment="Improving the tournament department">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Renderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Renderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tournament.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tournament.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +52,7 @@
       <option name="presentableId" value="Default" />
       <updated>1701954635335</updated>
       <workItem from="1701954636767" duration="1308000" />
-      <workItem from="1702285076559" duration="10796000" />
+      <workItem from="1702285076559" duration="21173000" />
     </task>
     <task id="LOCAL‎-00001" summary="init commit">
       <created>1702285277930</created>
@@ -64,7 +61,21 @@
       <option name="project" value="LOCAL‎" />
       <updated>1702285277930</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL‎-00002" summary="playTourment no final">
+      <created>1702297041553</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL‎-00002" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1702297041553</updated>
+    </task>
+    <task id="LOCAL‎-00003" summary="Improving the tournament department">
+      <created>1702313237561</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL‎-00003" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1702313237561</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -83,6 +94,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="init commit" />
+    <MESSAGE value="playTourment no final" />
+    <MESSAGE value="Improving the tournament department" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improving the tournament department" />
   </component>
 </project>
