@@ -1,7 +1,6 @@
 import javax.swing.plaf.synth.SynthListUI;
 
 public class Tournament {
-
     Player[] players;
     Renderer rendererBoard;
     int numOfRounds;
@@ -19,37 +18,28 @@ public class Tournament {
         GameStatus win;
         for (int i = 0; i < numOfRounds; i++) {
             myGame = new Game(this.players[i % 2], players[(i + 1) % 2], rendererBoard);
-            System.out.println("In this round player " + (i % 2 + 1) + " is X and player " + ((i + 1) % 2 + 1) + " is O:");
-
+            System.out.printf("\nIn the round #%d player %d  is X and player %d is O:\n",
+                    (i + 1), (i % 2 + 1), ((i + 1) % 2 + 1));
             win = myGame.run();
-            if (i % 2 == 0) {
-                if (win == GameStatus.X_WIN) {
-                    score[i % 2]++;
-                    System.out.println("In this round player " + (i % 2 + 1) + " win");
-                } else if (win == GameStatus.O_WIN) {
-                    score[(i + 1) % 2]++;
-                    System.out.println("In this round player " + ((i + 1) % 2 + 1) + " win");
-                } else {
-                    score[2]++;
-                    System.out.println("In this round Player 1 and 2 both win");
-                }
-
-            } else {
-                if (win == GameStatus.X_WIN) {
-                    score[(i + 1) % 2]++;
-                    System.out.println("In this round player " + ((i + 1) % 2 + 1) + " win");
-
-                } else if (win == GameStatus.O_WIN) {
-                    score[i % 2]++;
-                    System.out.println("In this round player " + (i % 2 + 1) + " win");
-
-                } else {
-                    score[2]++;
-                    System.out.println("In this round Player 1 and 2 both win");
-                }
-            }
+            if (i % 2 == 0)
+                checkWinner(win, 0, 1);
+            else
+                checkWinner(win, 1, 0);
         }
         return score;
+    }
+
+    private void checkWinner(GameStatus win, int player1, int player2) {
+        if (win == GameStatus.X_WIN) {
+            score[player1 % 2]++;
+            System.out.printf("In this round player %d win\n",player1+1);
+        } else if (win == GameStatus.O_WIN) {
+            score[(player2) % 2]++;
+            System.out.printf("In this round player %d win\n",player2+1);
+        } else {
+            score[2]++;
+            System.out.println("In this round Player 1 and 2 both win\n");
+        }
     }
 
     public static void main(String[] args) {
@@ -77,16 +67,13 @@ public class Tournament {
         }
         Tournament tournament = new Tournament(player1, player2, renderBoard, numOfRounds);
         tournament.playTournament();
-        System.out.println("the result is:");
-        System.out.println("score player 1: " + tournament.score[0]);
-        System.out.println("score player 2: " + tournament.score[1]);
-        System.out.println("score teko: " + tournament.score[2]);
-
+        System.out.printf("The tournament result:\nscore player 1:%d\nscore player 2:%d\nscore draw:%d\nthe winner is:",
+                tournament.score[0], tournament.score[1], tournament.score[2]);
         if (tournament.score[0] > tournament.score[1])
-            System.out.println("player 1 win");
+            System.out.println("player 1 ");
         else if (tournament.score[1] > tournament.score[0])
-            System.out.println("player 2 win");
+            System.out.println("player 2 ");
         else
-            System.out.println("Teko!!");
+            System.out.println("draw!!");
     }
 }
