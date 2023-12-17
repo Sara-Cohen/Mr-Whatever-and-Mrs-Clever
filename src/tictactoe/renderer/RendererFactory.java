@@ -1,3 +1,6 @@
+package tictactoe.renderer;
+
+
 public class RendererFactory {
     public Renderer buildRenderer(String type) {
         switch (type) {

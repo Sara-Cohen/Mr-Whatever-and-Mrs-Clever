@@ -1,4 +1,10 @@
-import javax.swing.plaf.synth.SynthListUI;
+package tictactoe.main;//import javax.swing.plaf.synth.SynthListUI;
+
+import tictactoe.player.Player;
+import tictactoe.player.PlayerFactory;
+import tictactoe.renderer.Renderer;
+import tictactoe.renderer.RendererFactory;
+
 
 public class Tournament {
     Player[] players;
@@ -38,7 +44,7 @@ public class Tournament {
             System.out.printf("In this round player %d win\n",player2+1);
         } else {
             score[2]++;
-            System.out.println("In this round Player 1 and 2 both win\n");
+            System.out.println("In this round tictactoe.player.Player 1 and 2 both win\n");
         }
     }
 

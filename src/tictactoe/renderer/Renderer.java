@@ -1,4 +1,6 @@
+package tictactoe.renderer;
 
+import tictactoe.main.Board;
 
 public interface Renderer {
 

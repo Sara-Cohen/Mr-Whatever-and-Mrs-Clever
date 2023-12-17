@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3d76689d-b296-4e4b-95b8-3f21c797bbb6" name="Changes" comment="add enter arguments from cli">
+    <list default="true" id="3d76689d-b296-4e4b-95b8-3f21c797bbb6" name="Changes" comment="the tournament class are complete">
+      <change afterPath="$PROJECT_DIR$/src/tictactoe/main/Board.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tictactoe/main/GameStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tictactoe/main/Mark.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tictactoe/player/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tournament.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tournament.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PlayerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tictactoe/player/PlayerFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Renderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tictactoe/renderer/Renderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RendererFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tictactoe/renderer/RendererFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tournament.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tictactoe/main/Tournament.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,20 +38,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "extract.method.default.visibility": "private",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="tictactoe.player" />
+      <recent name="tictactoe.main" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tournament" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tictactoe.main.Tournament" />
+      <module name="Mr. Whatever and Mrs. Clever" />
+      <option name="PROGRAM_PARAMETERS" value="Human Human Console 2 " />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tictactoe.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -53,7 +83,9 @@
       <option name="presentableId" value="Default" />
       <updated>1701954635335</updated>
       <workItem from="1701954636767" duration="1308000" />
-      <workItem from="1702285076559" duration="24291000" />
+      <workItem from="1702285076559" duration="25616000" />
+      <workItem from="1702803861477" duration="2852000" />
+      <workItem from="1702814618729" duration="3578000" />
     </task>
     <task id="LOCAL‎-00001" summary="init commit">
       <created>1702285277930</created>
@@ -83,7 +115,14 @@
       <option name="project" value="LOCAL‎" />
       <updated>1702376811260</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL‎-00005" summary="the tournament class are complete">
+      <created>1702379945651</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL‎-00005" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1702379945651</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,6 +144,19 @@
     <MESSAGE value="playTourment no final" />
     <MESSAGE value="Improving the tournament department" />
     <MESSAGE value="add enter arguments from cli" />
-    <option name="LAST_COMMIT_MESSAGE" value="add enter arguments from cli" />
+    <MESSAGE value="the tournament class are complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="the tournament class are complete" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/tictactoe/main/Game.java</url>
+          <line>8</line>
+          <properties field="renderBoard" class="tictactoe.main.Game" />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -1,3 +1,5 @@
+package tictactoe.player;
+
 public class PlayerFactory {
 
     public Player buildPlayer(String type) {
