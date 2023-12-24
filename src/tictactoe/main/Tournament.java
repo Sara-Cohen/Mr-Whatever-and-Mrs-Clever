@@ -24,8 +24,8 @@ public class Tournament {
         GameStatus win;
         for (int i = 0; i < numOfRounds; i++) {
             myGame = new Game(this.players[i % 2], players[(i + 1) % 2], rendererBoard);
-            System.out.printf("\nIn the round #%d player %d  is X and player %d is O:\n",
-                    (i + 1), (i % 2 + 1), ((i + 1) % 2 + 1));
+//            System.out.printf("\nIn the round #%d player %d  is X and player %d is O:\n",
+//                    (i + 1), (i % 2 + 1), ((i + 1) % 2 + 1));
             win = myGame.run();
             if (i % 2 == 0)
                 checkWinner(win, 0, 1);
@@ -38,13 +38,13 @@ public class Tournament {
     private void checkWinner(GameStatus win, int player1, int player2) {
         if (win == GameStatus.X_WIN) {
             score[player1 % 2]++;
-            System.out.printf("In this round player %d win\n",player1+1);
+//            System.out.printf("In this round player %d win\n",player1+1);
         } else if (win == GameStatus.O_WIN) {
             score[(player2) % 2]++;
-            System.out.printf("In this round player %d win\n",player2+1);
+//            System.out.printf("In this round player %d win\n",player2+1);
         } else {
             score[2]++;
-            System.out.println("In this round tictactoe.player.Player 1 and 2 both win\n");
+//            System.out.println("In this round tictactoe.player.Player 1 and 2 both win\n");
         }
     }
 

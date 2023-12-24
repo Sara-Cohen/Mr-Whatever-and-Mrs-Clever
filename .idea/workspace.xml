@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3d76689d-b296-4e4b-95b8-3f21c797bbb6" name="Changes" comment="the tournament class are complete">
-      <change afterPath="$PROJECT_DIR$/src/tictactoe/main/Board.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tictactoe/main/GameStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tictactoe/main/Mark.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tictactoe/player/Player.java" afterDir="false" />
+    <list default="true" id="3d76689d-b296-4e4b-95b8-3f21c797bbb6" name="Changes" comment="The representation of the models using packages">
+      <change afterPath="$PROJECT_DIR$/src/tictactoe/player/CleverPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tictactoe/player/WhateverPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tictactoe/renderer/VoidRenderer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PlayerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tictactoe/player/PlayerFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Renderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tictactoe/renderer/Renderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RendererFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tictactoe/renderer/RendererFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tournament.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tictactoe/main/Tournament.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tictactoe/main/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tictactoe/main/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tictactoe/main/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tictactoe/main/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tictactoe/main/Tournament.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tictactoe/main/Tournament.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tictactoe/player/PlayerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tictactoe/player/PlayerFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tictactoe/renderer/RendererFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tictactoe/renderer/RendererFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +48,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Users/user/programs/java/Mr. Whatever and Mrs. Clever&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
 }</component>
@@ -62,7 +62,7 @@
     <configuration name="Tournament" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="tictactoe.main.Tournament" />
       <module name="Mr. Whatever and Mrs. Clever" />
-      <option name="PROGRAM_PARAMETERS" value="Human Human Console 2 " />
+      <option name="PROGRAM_PARAMETERS" value="Whatever Clever none 10000" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="tictactoe.main.*" />
@@ -86,6 +86,8 @@
       <workItem from="1702285076559" duration="25616000" />
       <workItem from="1702803861477" duration="2852000" />
       <workItem from="1702814618729" duration="3578000" />
+      <workItem from="1702823195739" duration="12078000" />
+      <workItem from="1703447504966" duration="3104000" />
     </task>
     <task id="LOCAL‎-00001" summary="init commit">
       <created>1702285277930</created>
@@ -122,7 +124,14 @@
       <option name="project" value="LOCAL‎" />
       <updated>1702379945651</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL‎-00006" summary="The representation of the models using packages">
+      <created>1702823333478</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL‎-00006" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1702823333478</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,18 +154,23 @@
     <MESSAGE value="Improving the tournament department" />
     <MESSAGE value="add enter arguments from cli" />
     <MESSAGE value="the tournament class are complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="the tournament class are complete" />
+    <MESSAGE value="The representation of the models using packages" />
+    <option name="LAST_COMMIT_MESSAGE" value="The representation of the models using packages" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-field">
-          <url>file://$PROJECT_DIR$/src/tictactoe/main/Game.java</url>
-          <line>8</line>
-          <properties field="renderBoard" class="tictactoe.main.Game" />
-          <option name="timeStamp" value="3" />
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/tictactoe/main/Board.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Mr__Whatever_and_Mrs__Clever$Tournament.ic" NAME="Tournament Coverage Results" MODIFIED="1702824635865" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>tictactoe.main.*</FILTER>
+    </SUITE>
   </component>
 </project>

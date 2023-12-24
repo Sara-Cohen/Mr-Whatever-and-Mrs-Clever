@@ -91,4 +91,7 @@ public class Board {
         return this.board[row][col];
     }
 
+    public int getCapacity() {
+        return this.capacity;
+    }
 }

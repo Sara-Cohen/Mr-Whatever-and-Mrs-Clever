@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class HumanPlayer implements Player {
 
     private Scanner in = new Scanner(System.in);
-
+@Override
     public void playTurn(Board board, Mark mark) {
         while (true) {
             System.out.println("Choose cordinate of " + mark);
